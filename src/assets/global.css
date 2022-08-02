@@ -1,0 +1,66 @@
+:root {
+    --charcoal: #36454F;
+    --coolBlack: #002e63;
+    --mainTextColor: #eaffdc;
+}
+
+html,
+body {
+    background-color: var(--charcoal);
+    color: var(--mainTextColor);
+}
+
+#app {
+    font-family: Avenir, Helvetica, Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-align: center;
+    padding: 3rem 1rem;
+}
+
+button {
+    background-color: var(--mainTextColor);
+    color: var(--charcoal);
+    border: none;
+    border-radius: 0.2rem;
+    padding: 0.4rem;
+    box-shadow: 0 0 10px 3px var(--coolBlack);
+}
+
+button:disabled {
+    opacity: 0.5;
+    box-shadow: none
+}
+
+input {
+    border: none;
+    border-radius: 0.2rem;
+    padding: 0.4rem;
+}
+
+button:active,
+input:focus {
+    border: none;
+    border-radius: 0.2rem;
+    box-shadow: none;
+}
+
+.reaction-expectency-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    gap: 1rem;
+}
+
+.reaction-expectency-input-button {
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    gap: 0.5rem;
+}
+
+.reaction-expectency-input-button {
+    display: flex;
+    align-items: center;
+}
