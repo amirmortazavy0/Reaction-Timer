@@ -1,26 +1,33 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <h1 class="title">Challenge Your Reaction</h1>
+  <div class="main">
+    <MainComponent />
+  </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import MainComponent from "./components/MainComponent.vue";
 
 export default {
-  name: 'App',
+  name: "App",
   components: {
-    HelloWorld
-  }
-}
+    MainComponent,
+  },
+};
 </script>
 
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+<style scoped>
+.main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  padding: 1rem;
+  height: 50vh;
+}
+
+.title {
+  text-shadow: 1px 1px 30px var(--mainTextColor);
+  color: var(--coolBlack);
 }
 </style>
