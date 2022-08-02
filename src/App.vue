@@ -20,14 +20,19 @@ export default {
 .main {
   display: flex;
   justify-content: center;
-  align-items: center;
 
-  padding: 1rem;
+  padding: 10rem;
   height: 50vh;
 }
 
 .title {
-  text-shadow: 1px 1px 30px var(--mainTextColor);
+  display: inline;
+  background-color: rgba(234, 255, 220, 1);
+  /* background-color: var(--mainTextColor); */
+  box-shadow: 0 0 50px 10px var(--mainTextColor);
   color: var(--coolBlack);
+  border: 1px solid var(--coolBlack);
+  border-radius: 10rem;
+  padding: 1rem;
 }
 </style>
